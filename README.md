@@ -19,13 +19,13 @@ A Home Assistant custom integration for [myTNB](https://www.mytnb.com.my). Monit
 
 ### HACS (recommended)
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ken-kargo&repository=ha-mytnb&category=integration)
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=danieyal&repository=ha-mytnb&category=integration)
 
 Alternatively:
 
 1. In HACS, go to **Integrations**
 2. Open the **⋮** menu (top right) → **Custom repositories**
-3. Add `https://github.com/ken-kargo/ha-mytnb` with category **Integration**
+3. Add `https://github.com/danieyal/ha-mytnb` with category **Integration**
 4. Search for **myTNB** in HACS and install
 
 ### Manual
@@ -65,10 +65,6 @@ Each sensor includes attributes for account details, daily usage, tariff blocks,
 
 - Home Assistant 2024.1 or later
 - Malaysian IP address (TNB API blocks non-Malaysian connections)
-
-## Acknowledgements
-
-Thanks to [@danieyal](https://github.com/danieyal) for the original [ha-mytnb](https://github.com/danieyal/ha-mytnb) project, which this integration forked from and modified for my own needs.
 
 ## License
 
