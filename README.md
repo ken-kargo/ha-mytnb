@@ -57,7 +57,7 @@ For each discovered account (e.g. `220123456789`):
 | `sensor.mytnb_<acc>_meter_reading`       | kWh  | Latest billed meter register reading |
 | `sensor.mytnb_<acc>_current_meter_reading` | kWh | Current meter reading (extrapolated) |
 
-Both meter-reading sensors depend on the latest bill PDF's meter-information section. The latest billed meter-reading sensor exposes its billed kWh register, while the extrapolated sensor adds myTNB's current billing-period usage to that register and automatically rebases when a new billing number appears. Both sensors include the meter number, previous reading, billed usage, and any kW/kVARh registers. This is a fragile integration point: either sensor can become unavailable if myTNB changes its bill-PDF layout or bill-download endpoint.
+Both meter-reading sensors depend on the latest bill PDF's meter-information section. The latest billed meter-reading sensor exposes its billed kWh register, while the extrapolated sensor adds myTNB's current billing-period usage to that register and automatically rebases when a new billing number appears. Both sensors include the meter number, previous reading, billed usage, and any kW/kVARh registers. This is a fragile integration point: either sensor can become unavailable if myTNB changes its bill-PDF layout or bill-download endpoint. May need maintenance before become usable if TNB updated their bill structures and breaks the meter reading attempts.
 
 Each sensor includes attributes for account details, daily usage, tariff blocks, and bill history.
 
@@ -68,7 +68,7 @@ Each sensor includes attributes for account details, daily usage, tariff blocks,
 
 ## Acknowledgements
 
-Thanks to [@danieyal](https://github.com/danieyal) for the original [ha-mytnb](https://github.com/danieyal/ha-mytnb) project, which this integration builds upon.
+Thanks to [@danieyal](https://github.com/danieyal) for the original [ha-mytnb](https://github.com/danieyal/ha-mytnb) project, which this integration forked from and modified for my own needs.
 
 ## License
 
